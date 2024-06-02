@@ -1,0 +1,331 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Dropdown */
+
+.dropdown-content {
+    /* display: none;
+    height: 0;
+    position: absolute;
+    background-color: white;
+    min-width: auto;
+    width: 100%;
+    box-shadow: 0px 100px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left: 0;
+    top: 39px;
+    padding: 20px;
+    transition: .4s; */
+    max-height: 0;
+    overflow: auto;
+    position: absolute;
+    background-color: white;
+    /* opacity: 0; */
+    width: 100%;
+    top: 39px;
+    box-shadow: 0px 400px 300px 0px rgba(0, 0, 0, 0.822);
+    z-index: 1;
+    left: 0;
+    padding: 0;
+    opacity: 0;
+    transition: max-height .5s ease, padding .5s;
+}
+
+.dropdown-content.open {
+    max-height: 500px;
+    padding: 20px;
+}
+
+.dropdownVehicles, 
+.dropdownEnergy,
+.dropdownCharging,
+.dropdownDiscover,
+.dropdownShop {
+    transition: .4s;
+}
+
+.dropdownVehicles:hover .dropdown-content,
+.dropdownEnergy:hover .dropdown-content,
+.dropdownCharging:hover .dropdown-content,
+.dropdownDiscover:hover .dropdown-content,
+.dropdownShop:hover .dropdown-content {
+    max-height: 500px;
+    padding: 20px;
+    opacity: 1;
+    display: block;
+    height: auto;
+}
+
+.dropdownVehicles:hover ~ header,
+.dropdownEnergy:hover ~ header,
+.dropdownCharging:hover ~ header,
+.dropdownDiscover:hover ~ header,
+.dropdownShop:hover ~ header {
+    background-color: white;
+    /* position: relative; */
+}
+
+/* Dropdown Content */
+.dropdown-content .modelS,
+.dropdown-content .model3,
+.dropdown-content .modelX,
+.dropdown-content .modelY,
+.dropdown-content .cybertruck,
+.dropdown-content .helpMeChoose,
+.dropdown-content .solarPanels,
+.dropdown-content .solarRoof,
+.dropdown-content .powerWall,
+.dropdown-content .megaPack,
+.dropdown-content .charging,
+.dropdown-content .homeCharging,
+.dropdown-content .superCharging,
+.dropdown-content .list1,
+.dropdown-content .list2,
+.dropdown-content .list3,
+.dropdown-content .charging,
+.dropdown-content .vehiclesAccessories,
+.dropdown-content .apparel,
+.dropdown-content .lifestyle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+
+.dropdownVehicles .dropdown-content .cars {
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    margin: 60px 0 0 0px;
+    overflow: auto;
+    padding: 0 0 0 150px;
+    gap: 0 30px;
+    border-right: 1px solid #ccc;
+}
+
+.dropDown {
+    /* position: relative; */
+    display: inline-block;
+}
+
+.dropdownVehicles:hover .dropdown-content,
+.dropdownEnergy:hover .dropdown-content,
+.dropdownCharging:hover .dropdown-content {
+    display: flex;
+}
+
+.dropdown-content img {
+    width: 200px;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.dropdown-content .link {
+    margin-top: 10px;
+}
+
+.dropdown-content .link a {
+    margin-right: 10px;
+}
+
+.dropDown .listA {
+    text-decoration: none;
+    color: black;
+    /* font-weight: bolder; */
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.dropdownEnergy .dropdown-content .energy,
+.dropdownCharging .dropdown-content .powers {
+    display: flex;
+    flex-wrap: wrap;
+    width: 660px;
+    margin: 60px 0 0 0px;
+    overflow: auto;
+    padding: 10px 100px 10px 250px;
+    gap: 0 30px;
+    border-right: 1px solid #ccc;
+}
+
+.dropdownShop:hover .dropdown-content {
+    padding: 90px 0 40px 0;
+}
+
+.dropdownShop .dropdown-content .other {
+    display: flex;
+    justify-content: center;
+}
+
+.dropDown .dropdown-content .image img {
+    width: 200px;
+    cursor: pointer;
+}
+
+.dropdown-content .productName {
+    font-weight: bold;
+    cursor: text;
+}
+
+.dropdownDiscover:hover .dropdown-content {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.dropdownShop .dropdown-content .other .hoverContent {
+    cursor: pointer;
+}
+
+.dropdownDiscover .dropdown-content .title P {
+    color: #5C5E62;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.dropdownDiscover .dropdown-content .text ul {
+    left: 0;
+    right: 0;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.dropdownDiscover .dropdown-content .text ul li {
+    margin-top: 10px;
+}
+
+.dropdownDiscover .dropdown-content .text ul li a {
+    font-size: 14px;
+}
+
+.dropDown .dropdown-content .link a {
+    cursor: pointer;
+    border-bottom: 1px solid #979797;
+    font-size: 12px;
+    transition: .4s;
+    position: relative;
+}
+
+.dropdownDiscover .dropdown-content .links a {
+    cursor: pointer;
+    transition: .4s;
+    position: relative;
+}
+
+.dropdownDiscover .dropdown-content .links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: -1px;
+    right: 0;
+    background: black;
+    transition: width 0.3s ease;
+}
+
+.dropdownDiscover .dropdown-content .links a:not(:hover)::after {
+    animation: slideOut-BorderBottom .3s forwards;
+}
+
+.dropdownDiscover .dropdown-content .links a:hover::after {
+    animation: borderBottom .3s forwards;
+}
+
+.dropDown .dropdown-content .link a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: -1px;
+    right: 0;
+    background: black;
+    transition: width 0.3s ease;
+}
+
+.dropDown .dropdown-content .link a:not(:hover)::after {
+    animation: slideOut-BorderBottom .3s forwards;
+}
+
+.dropDown .dropdown-content .link a:hover::after {
+    animation: borderBottom .3s forwards;
+}
+
+@keyframes borderBottom {
+    0% {
+        width: 0;
+        left: 0;
+    }
+    100% {
+        width: 100%;
+        left: 0;
+    }
+}
+
+@keyframes slideOut-BorderBottom {
+    0% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0;
+        right: 0;
+    }
+}
+
+.more ul {
+    display: inline-block;
+    margin-top: 60px;
+}
+
+.more ul li {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.more ul li a {
+    position: relative;
+    cursor: pointer;
+}
+
+.more ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 3px;
+    right: 0;
+    background: black;
+    transition: width 0.3s ease;
+}
+
+.more ul li a:not(hover)::after {
+    animation: slideOut-BorderBottom .3s forwards;
+}
+
+.more ul li a:hover::after {
+    animation: slide-in-out .3s forwards;
+}
+
+@keyframes slide-in-out {
+    0% {
+        width: 0;
+        left: 0;
+    }
+    100% {
+        width: 100%;
+        left: 0;
+    }
+}

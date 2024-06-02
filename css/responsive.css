@@ -1,0 +1,109 @@
+/* Button */
+
+@media only screen and (max-width: 839px) {
+    .content .button .btn1, .content .button .btn2 {
+        padding: 13px 0;
+        width: 164px;
+    }
+
+    .content .cybertruckButton .btn1, .content .cybertruckButton .btn2 {
+        padding: 13px 0;
+        width: 164px;
+    }
+}
+
+@media only screen and (max-width: 641px) {
+    .content .button .btn1, .content .button .btn2 {
+        width: 264px;
+    }
+
+    .content .cybertruckButton .btn1, .content .cybertruckButton .btn2 {
+        width: 264px;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .content .cyberTruck .element .text svg {
+        width: 300px !important;
+    }
+
+    .content .button {
+        display: inline-block;
+    }
+
+    .content .cybertruckButton {
+        display: inline-block;
+    }
+    
+    .content .button .btn1, .content .button .btn2 {
+        width: 100%;
+    }
+
+    .content .cybertruckButton .btn1, .content .cybertruckButton .btn2 {
+        width: 100%;
+    }
+
+    .content .button .btn1 {
+        margin-bottom: 10px;
+    }
+
+    .content .cybertruckButton .btn1 {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .content .image .element .text h1 {
+        font-size: 30px;
+    }
+
+    .content .modelY .element .text .financing {
+        font-size: 20px;
+    }
+
+    .content .modelY .element .text div.ending {
+        font-size: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    footer .topFooter {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 344px) {
+    .content .cyberTruck .element .text svg {
+        width: 250px !important;
+    }
+} 
+
+/* Sidenav */
+
+@media only screen and (max-width: 1199px) {
+    .sidenav {
+        display: flex;
+    }
+
+    header {
+        display: none;
+    }
+
+    #dropdownVehicles #dropdown-content,
+    #dropdownEnergy #dropdown-content,
+    #dropdownCharging #dropdown-content,
+    #dropdownDiscover #dropdown-content {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 2000px) {
+    #dropdownVehicles,
+    #dropdownEnergy,
+    #dropdownCharging,
+    #dropdownDiscover {
+        display: none;
+    }
+}

@@ -1,0 +1,65 @@
+header {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    background-color: initial;
+    transition: background-color .3s ease;
+}
+
+header.white-bg {
+    background-color: white;
+}
+
+header nav {
+    justify-content: space-between;
+    display: flex;
+    z-index: 100;
+}
+
+header nav .teslaIcon {
+    margin-top: 11px;
+}
+
+header nav .teslaIcon svg {
+    cursor: pointer;
+}
+
+header nav .logo {
+    gap: 1px;
+    margin: 10px 30px 0 0;
+    display: flex;
+}
+
+header nav .logo .svg svg{
+    padding: 5px 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: .4s;
+}
+
+header nav .logo .svg svg:hover {
+    background-color: rgba(0, 0, 0, 0.082);
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+    /* margin-right: 100px; */
+}
+
+header nav ul .listA {
+    color: #171a20;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 15px;
+    padding: 7px 15px;
+    border-radius: 4px;
+    transition: .4s;
+}
+
+header nav ul .dropDown .listA:hover {
+    background-color: rgba(0, 0, 0, 0.082);
+}

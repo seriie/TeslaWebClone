@@ -1,0 +1,237 @@
+/* Dropdown Content */
+#dropdown-content #modelS,
+#dropdown-content #model3,
+#dropdown-content #modelX,
+#dropdown-content #modelY,
+#dropdown-content #cybertruck,
+#dropdown-content #helpMeChoose,
+#dropdown-content #solarPanels,
+#dropdown-content #solarRoof,
+#dropdown-content #powerWall,
+#dropdown-content #megaPack,
+#dropdown-content #charging,
+#dropdown-content #homeCharging,
+#dropdown-content #superCharging,
+#dropdown-content #list1,
+#dropdown-content #list2,
+#dropdown-content #list3,
+#dropdown-content #charging,
+#dropdown-content #vehiclesAccessories,
+#dropdown-content #apparel,
+#dropdown-content #lifestyle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+
+#dropdown {
+    position: absolute;
+    top: 0;
+}
+
+#dropdownVehicles {
+    display: none;
+    height: 550px;
+    background-color: white;
+    margin-top: 110px;
+    padding: 50px 40px 0 40px;
+    top: -46px;
+    position: relative;
+}
+
+#dropdownVehicles #borderRight {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 50px;
+}
+
+#dropdownVehicles #dropdown-content img {
+    width: 200px;
+}
+
+#dropdown-content #more ul li{
+    list-style: none;
+}
+
+#dropdown .header {
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    margin: 0 0 0 -40px;
+    background-color: white;
+}
+
+#dropdown .header img {
+    cursor: pointer;
+    border-radius: 3px;
+    transition: .3s;
+    width: 20px;
+    height: 20px;
+}
+
+#dropdown .header img:hover {
+    background-color: #f2f2f2;
+}
+
+#dropdown .header .left-angle {
+    color: #171A20;
+    padding: 10px 10px;
+    margin: 20px 0 0 30px;
+}
+
+#dropdown .header p {
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+#dropdown .header .times-icon {
+    padding: 8px 11px;
+    margin: 20px 30px 0 0;
+    color: #171A20;
+}
+
+#dropdownEnergy {
+    display: none;
+    height: 625px;
+    /* width: 1220px; */
+    background-color: white;
+    margin-top: 110px;
+    padding: 50px 40px 0 40px;
+    top: -46px;
+    position: relative;
+}
+
+#dropdownEnergy #energy {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 50px;
+}
+
+#dropdownEnergy #dropdown-content img {
+    width: 200px;
+}
+
+#dropdownCharging {
+    display: none;
+    height: 625px;
+    width: auto;
+    max-width: 100%;
+    min-width: auto;
+    background-color: white;
+    margin-top: 110px;
+    padding: 50px 400px 0 40px;
+    top: -46px;
+    position: relative;
+}
+
+#dropdownCharging #powers {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 10px 50px; */
+}
+
+#dropdownCharging #dropdown-content img {
+    width: 200px;
+}
+
+#dropdownDiscover {
+    display: none;
+    height: 625px;
+    width: 980px;
+    background-color: white;
+    margin-top: 110px;
+    padding: 50px 40px 0 40px;
+    top: -46px;
+    position: relative;
+}
+
+#dropdownDiscover #dropdown-content #text ul {
+    list-style: none;
+}
+
+#dropdownDiscover #dropdown-content #text ul li a {
+    text-decoration: none;
+    padding: 15px 10px 15px 10px;
+    display: block;
+    border-radius: 3px;
+    font-size: 18px;
+    color: #171A20;
+    font-weight: bold;
+    margin: 15px 0 15px -50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#dropdownDiscover #dropdown-content #text ul li a:hover {
+    background-color: #f2f2f2;
+}
+
+#dropdownVehicles #dropdown-content #car,
+#dropdownEnergy #dropdown-content #car,
+#dropdownCharging #dropdown-content #car {
+    font-weight: bold;;
+}
+
+#dropdownVehicles #dropdown-content #link a,
+#dropdownEnergy #dropdown-content #link a,
+#dropdownCharging #dropdown-content #link a {
+    cursor: pointer;
+    border-bottom: 1px solid #979797;
+    font-size: 12px;
+    transition: .4s;
+    position: relative;
+}
+
+#dropdownVehicles #dropdown-content #link a::after,
+#dropdownEnergy #dropdown-content #link a::after,
+#dropdownCharging #dropdown-content #link a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: -1px;
+    right: 0;
+    background: black;
+    transition: width 0.3s ease;
+}
+
+#dropdownVehicles #dropdown-content #link a:not(:hover)::after,
+#dropdownEnergy #dropdown-content #link a:not(:hover)::after,
+#dropdownCharging #dropdown-content #link a:not(:hover)::after {
+    animation: slideOut-BorderBottom .3s forwards;
+}
+
+#dropdownVehicles #dropdown-content #link a:hover::after,
+#dropdownEnergy #dropdown-content #link a:hover::after,
+#dropdownCharging #dropdown-content #link a:hover::after {
+    animation: borderBottom .3s forwards;
+}
+
+#dropdownVehicles #dropdown-content #more ul li a,
+#dropdownEnergy #dropdown-content #more ul li a,
+#dropdownCharging #dropdown-content #more ul li a {
+    text-decoration: none;
+    padding: 15px 10px 15px 10px;
+    display: block;
+    border-radius: 3px;
+    font-size: 18px;
+    color: #171A20;
+    font-weight: bold;
+    margin: 15px 0 15px -50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#dropdownVehicles #dropdown-content #more ul li a:hover,
+#dropdownEnergy #dropdown-content #more ul li a:hover,
+#dropdownCharging #dropdown-content #more ul li a:hover {
+    background-color: #f2f2f2;
+}

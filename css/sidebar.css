@@ -1,0 +1,120 @@
+.sidebar {
+    visibility: hidden;
+    opacity: 0;
+    flex-direction: column;
+    position: absolute;
+    align-items: flex-end;
+    padding: 70px 20px 0 20px;
+    inset: 0;
+    width: 96.2%;
+    height: 590px;
+    background-color: #fff;
+    transform: translateY(-10px);
+    transition: visibility 0s, opacity .4s ease-in-out;
+    /* transition: opacity 0.4s, transform 0.4s, visibility 0s 0.4s; */
+}
+
+.sidebar.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    transition: visibility 0s, opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.sidebar .h1 {
+    margin-top: -30px;
+}
+
+.sidebar h1 {
+    text-decoration: none;
+    padding: 15px 10px 15px 10px;
+    display: block;
+    border-radius: 3px;
+    font-size: 18px;
+    color: #171A20;
+    margin: 15px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar h1:hover {
+    background-color: #f2f2f2;
+}
+
+.sidebar a.account {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    margin-top: 150px;
+    cursor: pointer;
+    padding: 0 0 0 10px; 
+}
+
+.sidebar a.account:hover {
+    background-color: #f2f2f2;
+}
+
+.sidebar a.account svg {
+    margin-right: 8px;
+}
+
+.worldMarkSidenav {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    position: absolute;
+    padding: 20px 20px 20px 10px;
+    color: #171A20;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .3s;
+    margin-top: -120px;
+}
+
+.worldMarkSidenav:hover {
+    background-color: #f2f2f2;
+}
+
+.worldMarkSidenav svg {
+    margin-top: -20px;
+}
+
+.worldMarkSidenav .tds-icon-globe {
+    margin-right: 8px;
+}
+
+.worldMarkSidenav .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.worldMarkSidenav .country {
+    font-weight: bold;
+    color: #171A20;
+    margin: 0;
+}
+
+.worldMarkSidenav .language {
+    font-size: 14px;
+    color: #888;
+    margin: 0;
+}
+
+.closenav {
+    display: flex;
+    float: right;
+}
+
+.closenav img {
+    margin-top: -55px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 3px;
+    transition: .3s;
+}
+
+.closenav img:hover {
+    background-color: #f2f2f2;
+}

@@ -1,0 +1,35 @@
+.sidenav {
+    display: flex;
+    padding: 0 12px 0;
+    justify-content: space-between;
+    display: none;
+    width: 100%;
+    position: absolute;
+}
+
+.sidenav .teslaIcon {
+    margin: 23px 0 0 -40px;
+}
+
+.sidenav .teslaIcon svg {
+    cursor: pointer;
+}
+
+.sidenav .sidenavbtn {
+    margin-top: -15px;
+    padding: 10px;
+}
+
+
+.sidenav .sidenavbtn p {
+    border-radius: 3px;
+    padding: 6px 10px;
+    background-color: rgba(134, 134, 134, 0.13);
+    cursor: pointer;
+    transition: .3s;
+    margin: 20px 20px 0 0;
+}
+
+.sidenav .sidenavbtn p:hover {
+    background-color: rgba(134, 134, 134, 0.24);
+}

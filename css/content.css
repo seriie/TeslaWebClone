@@ -1,0 +1,306 @@
+* {
+    font-family: 'Gotham';
+}
+
+.content.active {
+    display: none;
+}
+
+/* Content */
+.content .image.modelY {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-Y-Desktop-Global.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .content .image.model3 {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-3-Desktop-LHD-v2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .content .image.modelX {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-X-Desktop-v2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .content .image.modelS {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-S-Desktop-v2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .content .image.cyberTruck {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://digitalassets.tesla.com/discovery-tesla-com/image/upload/f_auto,q_auto/Homepage-Cybertruck-Desktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;  
+  }
+  
+  .content .image.solarPanels {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-SolarPanels-01-Desktop');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .content .image.solarRoof {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Homepage-SolarRoof-Desktop-Global');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .content .image.powerWall {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Powerwall-01-Desktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .content .image.accessories {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Accessories-Desktop-NA-APAC.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .content .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .element .text {
+    text-align: center;
+    margin: -10px 0 300px 0;
+    line-height: 12px;
+    color: #171A20;
+  }
+  
+  .content .modelY .element .text .pricing {
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    padding: 0 0 2px 0;
+    transition: border-bottom .4s;
+    position: relative;
+  }
+  
+  .content .modelY .element .text .ending {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .content .modelS .element .text h1, .content .modelS .element .text a, .content .modelS .element .text p {
+    color: white;
+  }
+  
+  .element .text .pricing::after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      display: block;
+      left: 50%;
+      margin-top: 5px;
+      background: black;
+      transition: height .3s;
+      
+  }
+  
+  .content .modelY .element .text .financing:hover::after {
+    animation: slideShow .4s forwards;
+  }
+  
+  .content .modelY .element .text .financing:not(:hover)::after {
+    animation: slideOut-slideShow .4s forwards;
+  }
+  
+  @keyframes slideShow {
+    0% {
+      height: 2px;
+      width: 0;
+    }
+    100% {
+      left: 0;
+      height: 2px;
+      width: 100%;
+    }
+  }
+  
+  @keyframes slideOut-slideShow {
+    0% {
+      left: 0;
+      height: 2px;
+      width: 100%;
+    }
+    100% {
+      width: 0;
+    }
+  }
+  
+  .content .element .text h1 {
+    font-family: 'Gotham-bold';
+    color: #171A20;
+    font-weight: bold;
+    font-size: 40px;
+  }
+  
+  .content .modelY .element .text a {
+    font-size: 24px;
+    color: #171A20;
+    font-weight: bold;
+  }
+  
+  .content .model3 .element .text a, .content .modelX .element .text a, .content .modelS .element .text a {
+    font-size: 17px;
+    font-weight: bold;
+  }
+  
+  .content .model3 .element .text p, .content .modelX .element .text p, .content .modelS .element .text p {
+    font-size: 10.2px;
+  }
+  
+  .content .modelY .element .text span {
+    font-weight: bold;
+  }
+  
+  .element {
+    justify-content: center;
+    text-align: center;
+    width:90%;
+  }
+  
+  .button {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1px;
+    gap: 0 25px;
+  }
+  
+  .button .btn1, .button .btn2 {
+    padding: 13px 20px;
+    width: 264px;
+    background-color: #171A20;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: .4s;
+  }
+  
+  .button .btn1 {
+    background-color: #fff;
+  }
+  
+  .button .btn1:hover {
+    background-color: #E2E3E3;
+  }
+  
+  .button .btn2 {
+    color: white;
+    background-color: #222;
+  }
+  
+  .button .btn2:hover {
+    background-color: #393C41;
+  }
+  
+  .cybertruckButton {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1px;
+    gap: 0 25px;
+  }
+  
+  .cybertruckButton .btn1, .cybertruckButton .btn2 {
+    padding: 13px 0;
+    width: 264px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .4s;
+    background-color: #111;
+    color: rgb(139, 139, 139);
+    position: relative;
+    font-family: 'Gotham-SSm';
+    letter-spacing: 2px;
+    font-size: 12px;
+  }
+  
+  .cybertruckButton .btn1:hover, .cybertruckButton .btn2:hover {
+    background-color: #242424b7;
+  }
+  
+  .cybertruckButton .btn2 {
+    border: 1px solid rgb(58, 58, 58);
+  }
+  
+  .cybertruckButton .btn1::after {
+    content: '';
+    position: absolute;
+    height: 2.5px;
+    display: block;
+    width: 100%;
+    margin-top: -30px;
+    background: rgb(125, 125, 125);
+    transition: height .3s;
+  }
+  
+  .content .cyberTruck .element .text svg {
+    width: 450px;
+    height: auto;
+    justify-content: center;
+  }
+  
+  .content .solarPanels .element .text h1, .content .solarPanels .element .text a {
+    color: white;
+  }
+  
+  .content .solarPanels .element .text a {
+    cursor: pointer;
+    border-bottom: 1px solid white;
+    position: relative;
+  }
+  
+  .content .solarPanels .element .text a::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    display: block;
+    left: 50%;
+    margin-top: 1px;
+    background: white;
+    transition: height .3s;
+  }
+  
+  .content .solarPanels .element .text a:hover::after {
+    animation: slideShow .4s forwards;
+  }
+  
+  .content .solarPanels .element .text a:not(:hover)::after {
+    animation: slideOut-slideShow .4s forwards;
+  }
